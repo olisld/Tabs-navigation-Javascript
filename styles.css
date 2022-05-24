@@ -1,0 +1,58 @@
+:root {
+  --color-gray-100: #a3a1a3;
+  --color-gray-200: #6d6d6d;
+
+  --font-family: "Nunito", sans-serif;
+
+  --font-md: 18px;
+  --font-xl: 40px;
+
+  --font-bold: 700;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+
+  --animation-delay-100: 0.3s;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0 100px;
+  font-family: var(--font-family);
+}
+h1 {
+  font-weight: var(--font-bold);
+  text-align: center;
+  padding: var(--space-lg) 0;
+  font-size: var(--font-xl);
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid var(--color-gray-100);
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: var(--space-md);
+  transition: var(--animation-delay-100);
+  font-size: var(--font-md);
+}
+.tab button:hover {
+  background-color: var(--color-gray-200);
+  color: white;
+}
+.tab button.active {
+  background-color: var(--color-gray-100);
+  color: white;
+}
+.tabcontent {
+  display: none;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-gray-100);
+  border-top: none;
+}
